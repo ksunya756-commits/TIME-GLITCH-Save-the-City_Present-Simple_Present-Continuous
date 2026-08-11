@@ -71,7 +71,7 @@
 
 @media (max-height: 520px) and (orientation: landscape) {
   .game-shell { padding:0; }
-  .game-frame { height:100dvh; width:auto; max-width:100%; border-radius:0; }
+  .game-frame { height:100dvh; width:100vw; max-width:none; border-radius:0; }
   .hud-panel { min-height:44px; }
   .turn-panel { padding:.32rem .55rem; }
   .progress-panel { padding:.3rem .7rem; }
@@ -84,6 +84,6 @@
   .prompt-card { padding:.65rem; margin-bottom:.6rem; }
 }
 
-@supports not (aspect-ratio: 16 / 9) {
-  .game-frame { height:56.25vw; max-height:100vh; }
+@supports not (height: 100dvh) {
+  .game-shell, .game-frame { height:100vh; min-height:100vh; }
 }
