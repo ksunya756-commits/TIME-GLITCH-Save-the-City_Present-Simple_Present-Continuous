@@ -1,0 +1,10 @@
+# Local browser profiles and QA artifacts
+/.qa-*/
+/qa-*.png
+/test-results/
+/tmp/
+
+# Local system files
+Thumbs.db
+.DS_Store
+*.log
